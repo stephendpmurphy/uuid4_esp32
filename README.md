@@ -1,6 +1,5 @@
 # uuid4
-A tiny C library for generating [uuid4](http://www.ietf.org/rfc/rfc4122.txt)
-strings.
+A tiny C library for generating [uuid4](http://www.ietf.org/rfc/rfc4122.txt) strings. This module has been adapted from the [original author](https://github.com/rxi/uuid4) to instead use the hardware based random number generator in an ESP32 to generate the seed for the uuid4. The ESP32 RNG entropy source is enabled using the `bootloader_random_enable()` function. The [ESP32 RNG API reference can be found here](https://docs.espressif.com/projects/esp-idf/en/v4.4/esp32s3/api-reference/system/random.html).
 
 ### Usage
 [uuid4.c](src/uuid4.c?raw=1) and [uuid4.h](src/uuid4.h?raw=1) should be
