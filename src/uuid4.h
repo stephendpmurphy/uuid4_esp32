@@ -13,7 +13,7 @@ extern "C" {
 #endif
 
 #define UUID4_VERSION "1.0.0"
-#define UUID4_LEN 37
+#define UUID4_LEN 36
 
 enum {
   UUID4_ESUCCESS =  0,
